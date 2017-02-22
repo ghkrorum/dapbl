@@ -1,0 +1,386 @@
+# Copyright (C) 2013 WP Glossary
+# This file is distributed under the same license as the WP Glossary package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Glossary 2.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-glossary\n"
+"POT-Creation-Date: 2016-01-26 11:12+0000\n"
+"PO-Revision-Date: 2016-01-26 11:50+0000\n"
+"Last-Translator: Ivan Kleban <ivan.kleban@gmail.com>\n"
+"Language-Team: Ivan J. <ivan.kleban@gmail.com>\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#: ajax.php:29
+msgid "Private glossary term"
+msgstr ""
+
+#: ajax.php:34
+msgid "Protected glossary term"
+msgstr ""
+
+#: class/wpg-admin.class.php:64 class/wpg-admin.class.php:65
+msgid "Glossary Options"
+msgstr "Nastavenia Glosára"
+
+#: class/wpg-admin.class.php:86 class/wpg-widget-random-term.class.php:47
+msgid "Full"
+msgstr "Úplné"
+
+#: class/wpg-admin.class.php:87
+msgid "Display full post content"
+msgstr "Zobraziť úplné znenie príspevku"
+
+#: class/wpg-admin.class.php:90 class/wpg-widget-random-term.class.php:46
+msgid "Excerpt"
+msgstr "Výňatok"
+
+#: class/wpg-admin.class.php:91
+msgid "Display shorter excerpt content"
+msgstr "Zobraziť skrátený výňatok"
+
+#: class/wpg-admin.class.php:94 class/wpg-admin.class.php:153
+#: class/wpg-admin.class.php:162
+msgid "Off"
+msgstr "Vypnuté"
+
+#: class/wpg-admin.class.php:95
+msgid "Do not display tooltip at all"
+msgstr "Vôbec nezobraziť infobublinu"
+
+#: class/wpg-admin.class.php:105
+msgid "Alphabetical"
+msgstr "Abecedne"
+
+#: class/wpg-admin.class.php:105
+msgid "Display glossary archive alphabetically"
+msgstr "Zobraziť archív glosáru abecedne"
+
+#: class/wpg-admin.class.php:106
+msgid "Standard"
+msgstr "Štandardné"
+
+#: class/wpg-admin.class.php:106
+msgid "No filtering, display as standard archive"
+msgstr "Nefiltrovať, zobraziť ako štandardný archív"
+
+#: class/wpg-admin.class.php:117
+msgid "Cream"
+msgstr "Krém"
+
+#: class/wpg-admin.class.php:118
+msgid "Dark"
+msgstr "Tmavá"
+
+#: class/wpg-admin.class.php:119
+msgid "Green"
+msgstr "Zelená"
+
+#: class/wpg-admin.class.php:120
+msgid "Light"
+msgstr "Svetlá"
+
+#: class/wpg-admin.class.php:121
+msgid "Red"
+msgstr "Červená"
+
+#: class/wpg-admin.class.php:122
+msgid "Blue"
+msgstr "Modrá"
+
+#: class/wpg-admin.class.php:123
+msgid "Plain"
+msgstr ""
+
+#: class/wpg-admin.class.php:124
+msgid "Bootstrap"
+msgstr ""
+
+#: class/wpg-admin.class.php:125
+msgid "YouTube"
+msgstr ""
+
+#: class/wpg-admin.class.php:126
+msgid "Tipsy"
+msgstr ""
+
+#: class/wpg-admin.class.php:133
+msgid "Hover"
+msgstr ""
+
+#: class/wpg-admin.class.php:133
+msgid "On mouseover (hover)"
+msgstr ""
+
+#: class/wpg-admin.class.php:134
+msgid "Click"
+msgstr ""
+
+#: class/wpg-admin.class.php:134
+msgid "On click"
+msgstr ""
+
+#: class/wpg-admin.class.php:142
+msgid "Normal"
+msgstr "Normálna"
+
+#: class/wpg-admin.class.php:142
+msgid "Normal link with no modifications"
+msgstr "Normálny odkaz bez modifikácií"
+
+#: class/wpg-admin.class.php:143
+msgid "No link"
+msgstr "Bez odkazu"
+
+#: class/wpg-admin.class.php:143
+msgid "Don't link to term"
+msgstr "Neodkazovať na termín"
+
+#: class/wpg-admin.class.php:144
+msgid "New tab"
+msgstr "Nová záložka"
+
+#: class/wpg-admin.class.php:144
+msgid "Always open in a new tab"
+msgstr "Vždy otvoriť v novej záložke"
+
+#: class/wpg-admin.class.php:152 class/wpg-admin.class.php:161
+msgid "On"
+msgstr "Zapnuté"
+
+#: class/wpg-admin.class.php:152
+msgid "Reference link will be shown"
+msgstr ""
+
+#: class/wpg-admin.class.php:153
+msgid "Don't link to reference"
+msgstr ""
+
+#: class/wpg-admin.class.php:173
+msgid "WP Glossary Options"
+msgstr "Nastavenia WP Glosára"
+
+#: class/wpg-admin.class.php:184
+msgid "Archive:"
+msgstr "Archív :"
+
+#: class/wpg-admin.class.php:185
+msgid "Term link:"
+msgstr "Odkaz na termín:"
+
+#: class/wpg-admin.class.php:186
+msgid "Reference link:"
+msgstr ""
+
+#: class/wpg-admin.class.php:194
+msgid "Tooltip Content:"
+msgstr ""
+
+#: class/wpg-admin.class.php:195
+msgid "Tooltip Style (qTip):"
+msgstr ""
+
+#: class/wpg-admin.class.php:196
+msgid "Tooltip activation:"
+msgstr ""
+
+#: class/wpg-admin.class.php:205
+msgid "Term usage:"
+msgstr "Užívanie termínu:"
+
+#: class/wpg-admin.class.php:210
+msgid "Update Glossary Options"
+msgstr "Aktualizovať Nastavenia Glosára"
+
+#: class/wpg-admin.class.php:238
+msgid "Glossary options updated"
+msgstr "Nastavenia glosára aktualizované"
+
+#: class/wpg-post-types.class.php:17
+msgid "Glossary Terms"
+msgstr "Pojmy glosára"
+
+#: class/wpg-post-types.class.php:18
+msgid "Glossary Term"
+msgstr "Pojem glosára"
+
+#: class/wpg-post-types.class.php:19
+msgid "Add New Term"
+msgstr "Pridať nový pojem"
+
+#: class/wpg-post-types.class.php:20 class/wpg-post-types.class.php:22
+msgid "Add New Glossary Term"
+msgstr "Pridať Nový Pojem Glosára"
+
+#: class/wpg-post-types.class.php:21
+msgid "Edit Glossary Term"
+msgstr "Upraviť Pojem v Glosári"
+
+#: class/wpg-post-types.class.php:23
+msgid "View Glossary Term"
+msgstr "Zobraziť Pojem v Glosári"
+
+#: class/wpg-post-types.class.php:24
+msgid "Search Glossary Terms"
+msgstr "Prehľadávať Pojmy Glosára"
+
+#: class/wpg-post-types.class.php:25
+msgid "No Glossary Terms found"
+msgstr "Žiadne Pojmy Glosára nenájdené"
+
+#: class/wpg-post-types.class.php:26
+msgid "No Glossary Terms found in trash"
+msgstr "Žiadne Pojmy  Glosára nenájdené v koši"
+
+#: class/wpg-post-types.class.php:29
+msgctxt "rewrite slug"
+msgid "glossary"
+msgstr ""
+
+#: class/wpg-post-types.class.php:41
+msgid "Glossary Term Reference"
+msgstr "Referencia na Pojem v Glosári"
+
+#: class/wpg-post-types.class.php:53 class/wpg-widget-random-term.class.php:22
+msgid "Title:"
+msgstr "Názov:"
+
+#: class/wpg-post-types.class.php:54
+msgid "Link:"
+msgstr "Odkaz:"
+
+#: class/wpg-post-types.class.php:61
+msgid "Usage"
+msgstr "Použitie"
+
+#: class/wpg-post-types.class.php:62
+msgid "Reference"
+msgstr "Referencie"
+
+#: class/wpg-post-types.class.php:154
+msgid "Reference:"
+msgstr "Referencie:"
+
+#: class/wpg-post-types.class.php:163
+msgid "WP Glossary Term Usage"
+msgstr "Použitie Pojmu WP Glosára"
+
+#: class/wpg-shortcode-glossary-atoz.class.php:53
+#: class/wpg-shortcode-glossary-list.class.php:55
+msgid "There are no glossary items."
+msgstr "V glosári neboli nájdené žiadne pojmy."
+
+#: class/wpg-shortcode-glossary-atoz.class.php:84
+msgid "Terms"
+msgstr "PojmyTermes"
+
+#: class/wpg-shortcode-glossary-atoz.class.php:99
+msgid "Please select from the menu above"
+msgstr "Prosím, vyberte z vrchného menu "
+
+#: class/wpg-taxonomies.class.php:12
+msgid "Glossary Groups"
+msgstr "Skupiny Glosára"
+
+#: class/wpg-taxonomies.class.php:13
+msgid "Glossary Group"
+msgstr "Skupina Glosára"
+
+#: class/wpg-taxonomies.class.php:14
+msgid "Search Glossary Groups"
+msgstr "Prehľadávať Skupiny Glosára"
+
+#: class/wpg-taxonomies.class.php:15
+msgid "All Glossary Groups"
+msgstr "Všetky Skupiny Glosára"
+
+#: class/wpg-taxonomies.class.php:16
+msgid "Parent Glossary Group"
+msgstr "Nadradená Skupina Glosára"
+
+#: class/wpg-taxonomies.class.php:17
+msgid "Parent Glossary Group:"
+msgstr "Nadradená Skupina Glosára:"
+
+#: class/wpg-taxonomies.class.php:18
+msgid "Edit Glossary Group"
+msgstr "Upraviť Skupinu Glosára"
+
+#: class/wpg-taxonomies.class.php:19
+msgid "Update Glossary Group"
+msgstr "Aktualizovať Skupinu Glosára"
+
+#: class/wpg-taxonomies.class.php:20
+msgid "Add New Glossary Group"
+msgstr "Pridať Novú Skupinu Glosára"
+
+#: class/wpg-taxonomies.class.php:21
+msgid "New Glossary Group Name"
+msgstr "Názov Novej Skupiny Glosára"
+
+#: class/wpg-taxonomies.class.php:30
+msgid "glossary/group"
+msgstr "glosár/skupina"
+
+#: class/wpg-widget-random-term.class.php:9
+msgid "Add a random glossary term to your sidebar"
+msgstr "Vložiť náhodný pojem z glosára do vášho bočného panela"
+
+#: class/wpg-widget-random-term.class.php:17
+msgid "Random Glossary term"
+msgstr "Náhodný pojem"
+
+#: class/wpg-widget-random-term.class.php:34
+msgid "Any"
+msgstr "Akýkoľvek"
+
+#: class/wpg-widget-random-term.class.php:37
+msgid "Group:"
+msgstr "Skupina:"
+
+#: class/wpg-widget-random-term.class.php:45
+msgid "Title Only"
+msgstr "len názov"
+
+#: class/wpg-widget-random-term.class.php:50
+msgid "Display:"
+msgstr "Zobraziť:"
+
+#: class/wpg-widget-random-term.class.php:103
+msgid "No terms available"
+msgstr "Žiadne dostupné pojmy"
+
+#: fn-lib.php:6
+msgid "-no options-"
+msgstr "-bez možností-"
+
+#: fn-lib.php:22
+msgid "- Please Select -"
+msgstr "-Prosím vyberte-"
+
+#~ msgid "glossary"
+#~ msgstr "glosár"
+
+#~ msgid "Tooltip:"
+#~ msgstr "Infobublina:"
+
+#~ msgid "Tooltip (qTip):"
+#~ msgstr "Infobublina (qTip) :"
+
+#~ msgid "WP Glossary"
+#~ msgstr "WP Glosár"
+
+#~ msgid "http://wordpress.org/extend/plugins/wp-glossary/"
+#~ msgstr "http://wordpress.org/extend/plugins/wp-glossary/"
+
+#~ msgid "Build a glossary of terms and link your post content to it."
+#~ msgstr "Vytvorte glosár pojmov a odkážte na ne obsah vašich príspevkov"
+
+#~ msgid "TCBarrett"
+#~ msgstr "TCBarrett"
+
+#~ msgid "http://www.tcbarrett.com/"
+#~ msgstr "http://www.tcbarrett.com/"
