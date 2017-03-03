@@ -157,10 +157,21 @@ var main; // Declare main variable in global scope
 			
 			if ( state.postID != This.currentState.postID ){
 				This.currentState = state;
-				console.log(state);
 				history.pushState(state, state.title, state.permalink);
+				This.trackPageview();
 			}
 			
+		};
+
+		this.trackPageview = function(){
+			var location = window.location.href,
+                path = '/' + window.location.pathname;
+            if (typeof ga !== 'undefined' && $.isFunction(ga)) {
+                ga('send', 'pageview', path);
+            }
+            if (typeof __gaTracker !== 'undefined' && $.isFunction(__gaTracker)) {
+                __gaTracker('send', 'pageview', path);
+            }
 		};
 
 		this.scrollMonitor = function(){

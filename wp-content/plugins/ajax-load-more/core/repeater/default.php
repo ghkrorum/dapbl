@@ -53,7 +53,11 @@ $permalink = parse_url($permalink, PHP_URL_PATH);
                                             <li><?= $authorName; ?></li>
                                         </ul>
                                         <div class="content-txt">
+                                            <?php echo do_shortcode('[ssbp title="'.get_the_title().'" url="'.get_permalink().'"]'); ?>
+
                                             <?php the_content(); ?>
+                                            
+                                            <?php echo do_shortcode('[ssbp title="'.get_the_title().'" url="'.get_permalink().'"]'); ?>
                                         </div>
                                         <ul class="list-inline content-date HelveticaNeue-CondensedBold">
                                             <?= kxn_the_time(); ?>

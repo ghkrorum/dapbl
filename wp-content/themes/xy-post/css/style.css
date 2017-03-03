@@ -1115,6 +1115,9 @@ hr{
     display: none;
 }
 /*page-nota*/
+.page-nota .section{
+    margin-top: 20px;
+}
 .page-nota .back{
     background: #aaaaaa;
 }
@@ -1179,8 +1182,23 @@ hr{
     color: #000;
     line-height: 23px;
     text-align: justify;
+    padding: 15px 0;
 }
 /*post styles*/
+.page-nota .content-nota .ssbp--theme-2.ssbp--centred .ssbp-list li.ssbp-li--whatsapp{
+    display: none !important;
+}
+.page-nota .content-nota .ssbp--state-hidden .ssbp-container{
+    display: block;
+    width: 100%;
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Chrome, Safari, Opera */
+    transform: none;
+}
+.ssbp--theme-2.ssbp--centred .ssbp-list li{
+    padding: 0;
+}
+
 .page-nota .content-nota .content-txt p{
     padding: 10px 0;
     
@@ -1192,6 +1210,7 @@ hr{
 }
 .page-nota .content-nota ul >li{
     list-style: disc;
+    margin-bottom: 0;
 }
 .page-nota .content-nota ol >li{
     list-style: decimal;
@@ -1408,8 +1427,8 @@ hr{
     float: left;
     width: 100%;
     background: #000;
-    font-size: 1.2em;
-    line-height: 15px;
+    font-size: 1.3em;
+    line-height: 16px;
 }
 .page-xplainer .menu-xplainer >li{
     float: left;
@@ -1490,11 +1509,11 @@ hr{
     font-size: 12px;
 }
 .page-xplainer .content-xplainer h1{
-    font-size: 17px;
+    font-size: 24px;
     text-align: center;
 }
 .page-xplainer .content-xplainer h2{
-    font-size: 17px;
+    font-size: 20px;
     color: #949494;
     text-align: center;
     margin-top: 5px;
@@ -1502,8 +1521,8 @@ hr{
 }
 .page-xplainer .content-xplainer .scroll-white p{
     font-family: "Bebas-Neue-Regular";
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 22px;
     padding: 10px 0;
     float: left;
 }
@@ -2161,10 +2180,10 @@ hr{
     }
     /*page-nota*/
     .page-nota .content-title .title {
-        font-size: 2em;
+        font-size: 2.2em;
     }
     .page-nota .content-title .title span {
-        line-height: 28px;
+        line-height: 30px;
     }
     .section-notas .txt-img h1 {
         font-size: 1.8em;
@@ -2232,9 +2251,13 @@ hr{
     .section-notas .col-xs-4{
         width: 100%;
     }
+    .alm-reveal .page-nota .section{
+        margin-top: 0;
+    }
     .section-notas .col-xs-4 .content-image{
        margin-top: 15px;
     }
+    
     /*page-xplainer*/
     .page-xplainer .owl-theme .owl-controls .owl-buttons div {
         font-size: 2em;
@@ -2360,12 +2383,22 @@ hr{
         font-size: 1.2em;
     }
     /*page-nota*/
+    .page-nota .content-nota .ssbp--theme-2.ssbp--centred .ssbp-list li.ssbp-li--whatsapp{
+        display: block !important;
+    }
     .section-title-nota .col-xs-6{
         width: 100%;
     }
     .section-title-nota .section-newsletter .content-new {
         padding-top: 15px;
     }
+    .page-nota .content-title{
+        padding: 10px 0;
+    }
+    .page-nota .content-nota .content-txt{
+        padding: 15px 0;
+    }
+
     /*page-xplainer*/
     .page-xplainer .owl-theme .owl-controls .owl-buttons .owl-prev{
         left: -17%;
