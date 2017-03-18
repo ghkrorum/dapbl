@@ -117,7 +117,152 @@ function xy_register_sidebars() {
     register_sidebar( array(
         'name'          => 'Single Sidebar',
         'id'            => 'xy_single_sidebar',
+        'before_widget' => '<div d="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Banner 1',
+        'id'            => 'xy_home_banner_1',
         'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Banner 1.5',
+        'id'            => 'xy_home_banner_1_5',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Banner 2',
+        'id'            => 'xy_home_banner_2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Banner 3',
+        'id'            => 'xy_home_banner_3',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Banner 4',
+        'id'            => 'xy_home_banner_4',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Mobile Banner 1',
+        'id'            => 'xy_home_mobile_banner_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Mobile Banner 2',
+        'id'            => 'xy_home_mobile_banner_2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home Mobile Banner 3',
+        'id'            => 'xy_home_mobile_banner_3',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    
+    register_sidebar( array(
+        'name'          => 'Section Banner 1',
+        'id'            => 'xy_section_banner_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Section Banner 2',
+        'id'            => 'xy_section_banner_2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Section Mobile Banner 1',
+        'id'            => 'xy_section_mobile_banner_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Section Mobile Banner 2',
+        'id'            => 'xy_section_mobile_banner_2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Single Banner 1',
+        'id'            => 'xy_single_banner_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Single Banner 2',
+        'id'            => 'xy_single_banner_2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Single Mobile Banner 1',
+        'id'            => 'xy_single_mobile_banner_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="cat_name">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Single Mobile Banner 2',
+        'id'            => 'xy_single_mobile_banner_2',
+        'before_widget' => '<div d="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="cat_name">',
         'after_title'   => '</h3>',

@@ -28,6 +28,7 @@ $excludePostIdArray = array();
                                     </div>
                                 </div>   
                             </div>
+
                             <?php
                             if ( have_rows('acf_featured_news_item') ) :
                             	the_row();
@@ -47,6 +48,23 @@ $excludePostIdArray = array();
 			                    endif;
 			                endif;
                             ?>
+
+                            <?php if ( is_active_sidebar( 'xy_section_banner_1' ) ) : ?>
+                            <div class="banner-cont desktop">
+                                <div class="banner_holder section-banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_section_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+
+                            <?php if ( is_active_sidebar( 'xy_section_mobile_banner_1' ) ) : ?>
+                            <div class="banner-cont mobile">
+                                <div class="banner_holder section-mobile-banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_section_mobile_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+
                             <div class="row section-destacados HelveticaNeue-CondensedBold">
                                 <?php
                                 if ( have_rows('acf_blocks') ){
@@ -74,6 +92,24 @@ $excludePostIdArray = array();
                         </div>
                     </div>
                 </section>
+
+                <?php if ( is_active_sidebar( 'xy_section_banner_2' ) ) : ?>
+                <div class="banner-cont desktop">
+                    <div class="banner_holder section-banner-2"> 
+                      <?php dynamic_sidebar( 'xy_section_banner_2' ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ( is_active_sidebar( 'xy_section_mobile_banner_2' ) ) : ?>
+                <div class="banner-cont mobile">
+                    <div class="banner_holder section-mobile-banner-2"> 
+                      <?php dynamic_sidebar( 'xy_section_mobile_banner_2' ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+
+
                 <?php
                 $moreTerms = get_field('acf_load_more_terms');
                 if ( $moreTerms ):

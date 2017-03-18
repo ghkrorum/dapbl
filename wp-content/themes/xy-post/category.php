@@ -37,9 +37,22 @@ $excludePostIdArray = array();
                                 </div>
                             </div>
                             <?php endif; ?>
-
                             
+                            <?php if ( is_active_sidebar( 'xy_section_banner_1' ) ) : ?>
+                            <div class="banner-cont desktop">
+                                <div class="banner_holder section-banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_section_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
 
+                            <?php if ( is_active_sidebar( 'xy_section_mobile_banner_1' ) ) : ?>
+                            <div class="banner-cont mobile">
+                                <div class="banner_holder section-mobile-banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_section_mobile_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                             
                             <?php 
                             $counter = 0;
@@ -102,6 +115,23 @@ $excludePostIdArray = array();
                         </div>
                     </div>
                 </section>
+
+                <?php if ( is_active_sidebar( 'xy_section_banner_2' ) ) : ?>
+                <div class="banner-cont desktop">
+                    <div class="banner_holder section-banner-2"> 
+                      <?php dynamic_sidebar( 'xy_section_banner_2' ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ( is_active_sidebar( 'xy_section_mobile_banner_2' ) ) : ?>
+                <div class="banner-cont mobile">
+                    <div class="banner_holder section-mobile-banner-2"> 
+                      <?php dynamic_sidebar( 'xy_section_mobile_banner_2' ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+
                 <section class="section-principal  mas-destacados">
                     <div class="container-fluid">
                         <div class="container">

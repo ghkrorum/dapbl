@@ -70,9 +70,24 @@ $excludePostIdArray = array();
                 }
 
                 ?>
+
                 <section class="section-principal the-home">
                     <div class="container-fluid">
                         <div class="container">
+                            <?php if ( is_active_sidebar( 'xy_home_banner_1' ) ) : ?>
+                            <div class="banner-cont desktop">
+                                <div class="banner_holder banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_home_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                            <?php if ( is_active_sidebar( 'xy_home_mobile_banner_1' ) ) : ?>
+                            <div class="banner-cont mobile">
+                                <div class="banner_holder mobile-banner-1"> 
+                                  <?php dynamic_sidebar( 'xy_home_mobile_banner_1' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                             <div class="row section">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <h1 class="title-section HelveticaNeue-Bold"><i class="fa fa-window-minimize fa-left" aria-hidden="true"></i>
@@ -140,6 +155,15 @@ $excludePostIdArray = array();
                                 </div>
                             </div>
 
+                            <?php if ( is_active_sidebar( 'xy_home_mobile_banner_2' ) ) : ?>
+                            <div class="banner-cont mobile">
+                                <div class="banner_holder mobile-banner-2"> 
+                                  <?php dynamic_sidebar( 'xy_home_mobile_banner_2' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                            
+
                             <?php if ( have_rows('section_2_blocks') ): ?>
 
                             <div class="row section">
@@ -174,6 +198,21 @@ $excludePostIdArray = array();
 
                             <?php endif; // if ( have_rows('section_2_blocks') ): ?>
                             
+                            <?php if ( is_active_sidebar( 'xy_home_banner_2' ) ) : ?>
+                            <div class="banner-cont desktop">
+                                <div class="banner_holder banner-2"> 
+                                  <?php dynamic_sidebar( 'xy_home_banner_2' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+
+                            <?php if ( is_active_sidebar( 'xy_home_mobile_banner_3' ) ) : ?>
+                            <div class="banner-cont mobile">
+                                <div class="banner_holder mobile-banner-3"> 
+                                  <?php dynamic_sidebar( 'xy_home_mobile_banner_3' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
 
                             <?php 
                             $videos = get_field('section_3_videos');
@@ -254,6 +293,14 @@ $excludePostIdArray = array();
                                 wp_reset_postdata();
                             endif; // if ( $videos ) :  
                             ?>
+
+                            <?php if ( is_active_sidebar( 'xy_home_banner_3' ) ) : ?>
+                            <div class="banner-cont desktop">
+                                <div class="banner_holder banner-3"> 
+                                  <?php dynamic_sidebar( 'xy_home_banner_3' ); ?>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </section>
@@ -296,6 +343,14 @@ $excludePostIdArray = array();
                 endif; // if ( $postsSection4 ) :
                 ?>
 
+                <?php if ( is_active_sidebar( 'xy_home_banner_4' ) ) : ?>
+                <div class="banner-cont desktop">
+                    <div class="banner_holder banner-4"> 
+                      <?php dynamic_sidebar( 'xy_home_banner_4' ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+
                 <?php 
                 $explainers = get_field('section_5_posts');
                 if ( $explainers ) :
@@ -316,7 +371,7 @@ $excludePostIdArray = array();
                                 </div>
                                 <?php if ( $moreLink ) : ?>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
-                                    <div class="button-send Bebas-Neue-Bold"><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="<?= $moreLink; ?>">ver todos</a></div>
+                                    <div class="button-send Bebas-Neue-Bold"><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="<?= $moreLink; ?>"><?= $moreCaption; ?></a></div>
                                 </div>    
                                 <?php endif; ?>
                             </div>
@@ -354,6 +409,8 @@ $excludePostIdArray = array();
                 if ( have_rows('section_6_blocks') ) :
                     $title = get_field('section_6_title');
                     $moreLink = get_field('section_6_more_link');
+                    $moreCaption = get_field('section_6_more_caption');
+                    
                 ?>
                 <section class="section-xplainer">
                     <div class="container-fluid">
@@ -364,7 +421,7 @@ $excludePostIdArray = array();
                                 </div>
                                 <?php if ( $moreLink ) : ?>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <div class="button-send Bebas-Neue-Bold"><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="<?= $moreLink; ?>">ver todos</a></div>
+                                    <div class="button-send Bebas-Neue-Bold"><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="<?= $moreLink; ?>"><?= $moreCaption; ?></a></div>
                                 </div>
                                 <?php endif; ?>
                             </div>

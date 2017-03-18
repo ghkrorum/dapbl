@@ -2,7 +2,8 @@
                 <?php
                 global $post;
                 while ( have_posts() ) : the_post();
-                    if ( in_category( 'x-plainers' ) ) :
+                    $topics = get_field('acf_topics');
+                    if ( $topics ) :
                         get_template_part( 'template-parts/post/xplainer' );
                     else : 
                         $excludePostIdArray[] = $post->ID;
@@ -13,6 +14,22 @@
                         $permalink = parse_url($permalink, PHP_URL_PATH);
                 ?>
                 <section class="page-nota" data-post-id="<?= $post->ID?>" data-post-title="<?php the_title(); ?>" data-post-permalink="<?= $permalink; ?>">
+                    <?php if ( is_active_sidebar( 'xy_single_banner_1' ) ) : ?>
+                    <div class="banner-cont desktop">
+                        <div class="banner_holder single-banner-1"> 
+                          <?php dynamic_sidebar( 'xy_single_banner_1' ); ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
+                    <?php if ( is_active_sidebar( 'xy_single_mobile_banner_1' ) ) : ?>
+                    <div class="banner-cont mobile">
+                        <div class="banner_holder single-mobile-banner-1"> 
+                          <?php dynamic_sidebar( 'xy_single_mobile_banner_1' ); ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
                     <div class="container-fluid">
                         <div class="container">
                             <div class="row section back">
@@ -49,7 +66,7 @@
                             </div>
                             <?php endif; ?>
                             <div class="row section">
-                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 post-content">
                                     <div class="content-nota Bebas-Neue-Regular">
                                         <div class="featured-image">
                                             <?php the_post_thumbnail( 'post_featured', array('class' => 'img-responsive') ); ?>
@@ -75,7 +92,24 @@
                             </div>
                         </div>
                     </div>
-                </section>      
+
+                    <?php if ( is_active_sidebar( 'xy_single_banner_2' ) ) : ?>
+                    <div class="banner-cont desktop">
+                        <div class="banner_holder single-banner-2"> 
+                          <?php dynamic_sidebar( 'xy_single_banner_2' ); ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
+                    <?php if ( is_active_sidebar( 'xy_single_mobile_banner_2' ) ) : ?>
+                    <div class="banner-cont mobile">
+                        <div class="banner_holder single-mobile-banner-2"> 
+                          <?php dynamic_sidebar( 'xy_single_mobile_banner_2' ); ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
+                </section>
                 <?php
                 $relatedPosts = get_field('acf_related_posts');
                 if ( $relatedPosts ) :

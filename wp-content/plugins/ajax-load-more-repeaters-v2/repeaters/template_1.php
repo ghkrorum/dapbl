@@ -10,7 +10,7 @@ if ( $blueCount % 4 == 0 ){
     $gradientClass = 'blue';
 }
 ?>
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="list-inline list-ultimos Bebas-Neue-Bold <?= $gradientClass?>">
         <article class="item">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

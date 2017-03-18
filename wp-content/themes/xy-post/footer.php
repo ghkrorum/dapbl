@@ -2,12 +2,12 @@
                     <div class="container-fluid">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
                                     <figure class="content-image logo">
-                                        <img src="<?= THEME_URL; ?>/images/logo.png" class="img-responsive" alt="XY Post">
+                                        <img src="<?= THEME_URL; ?>/images/xy-logo.png" class="img-responsive" alt="XY Post">
                                     </figure>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-9 section-newsletter Bebas-Neue-Light">
+                                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-7 section-newsletter Bebas-Neue-Light">
                                     <div class="content-new">
                                         <a href="" class="news" data-toggle="modal" data-target=".modal-newsletter">suscríbete al <strong>newsletter</strong></a>
                                     </div>
@@ -22,7 +22,7 @@
                                         <li><a href="">Contacto</a></li>
                                     </ul> -->
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-9 redes">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 redes">
                                     <?php wp_nav_menu( array( 
                                         'theme_location' => 'xy_post_footer_menu_mobile',
                                         'container' => '',

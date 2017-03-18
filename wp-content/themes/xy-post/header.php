@@ -56,9 +56,18 @@
                                         </div>
                                         <figure class="content-image logo">
                                             <a href="<?php echo home_url();?>">
-                                                <img class="img-responsive" src="<?= THEME_URL; ?>/images/logo.png" alt="xy Post"/>
+                                                <img class="img-responsive" src="<?= THEME_URL; ?>/images/xy-logo.png" alt="xy Post"/>
                                             </a>
                                         </figure>
+
+                                        
+
+                                        <div class="main-menu">
+                                            <?php wp_nav_menu( array( 
+                                                'theme_location' => 'xy_post_menu',
+                                                'container' => '',
+                                            )); ?>
+                                        </div>
 
                                         <ul class="redes-sociales list-inline Bebas-Neue-Light">
                                             <li><a href="" data-toggle="modal" data-target=".modal-search"><i class="fa fa-search rounded-circle" aria-hidden="true"></i></a></li>
@@ -78,13 +87,6 @@
                                             <?php endif; ?>
                                             <li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                                         </ul>
-
-                                        <div class="main-menu">
-                                            <?php wp_nav_menu( array( 
-                                                'theme_location' => 'xy_post_menu',
-                                                'container' => '',
-                                            )); ?>
-                                        </div>
                                     </nav> 
                                 </div>  
                             </div> 
