@@ -24,6 +24,7 @@ $target = ( get_sub_field('acf_block_item_new_window') ) ? '_blank' : '_self' ;
             <?php endif; ?>
 
             <div class="list-excerpt">
+                <div class="list-caption">Más de <?= $title; ?></div>
                 <ul>
                     <?php
                     for ( $i = 1 ; $i < $total ; $i++ ) : 

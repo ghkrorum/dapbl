@@ -25,6 +25,7 @@ if ( $sectionCat ) :
             </div>
             <?php endif; ?>
             <div class="list-excerpt">
+                <div class="list-caption">Más de <?= $sectionCat->name; ?></div>
                 <ul>
                     <?php 
                     for ( $i = 1 ; $i < $total ; $i++ ):

@@ -47,6 +47,7 @@ if ( $sectionCat ) :
                 <h2 class="title HelveticaNeue-CondensedBold"><a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a></h2>
             <?php endif; ?>
             <div class="list-excerpt">
+                <div class="list-caption">Más de <?= $title; ?></div>
                 <ul>
                     <?php
                     

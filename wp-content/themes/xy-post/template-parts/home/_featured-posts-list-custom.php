@@ -24,6 +24,7 @@ if ( $posts ) :
                 <?php endif; ?>
             </div>
             <div class="list-excerpt">
+                <div class="list-caption">Más de <?= $title; ?></div>
                 <ul>
                     <?php
                     $total = count($posts);

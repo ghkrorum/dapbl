@@ -70,7 +70,7 @@ $excludePostIdArray = array();
                                 <article class="item">
                                     <div class="content-description">
                                         <h1 class="category"><?php single_cat_title(); ?></h1>
-                                        <h2 class="title HelveticaNeue-CondensedBold"><?php the_title(); ?></h2>
+                                        <h2 class="title HelveticaNeue-CondensedBold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                         <div class="content-image">
                                             <?php if ( '' !== get_the_post_thumbnail() ) : ?>
                                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
@@ -79,6 +79,7 @@ $excludePostIdArray = array();
                                             <?php endif; ?>
                                         </div>
                                         <div class="list-excerpt">
+                                            <div class="list-caption">Más de <?php single_cat_title(); ?></div>
                                             <ul>
 
                             <?php else : ?>

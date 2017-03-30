@@ -108,6 +108,10 @@ var main; // Declare main variable in global scope
 
 			setInterval(This.scrollMonitor, 10);
 
+			fluidvids.init({
+			  selector: ['iframe', 'object'],
+			  players: ['www.youtube.com', 'player.vimeo.com']
+			});
 			
 		};
 

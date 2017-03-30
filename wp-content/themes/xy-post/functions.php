@@ -22,12 +22,18 @@ function xy_post_scripts() {
 
     wp_enqueue_script( 'kxn-alm-previous-post', THEME_URL . '/js/kxn-alm-previous-post.js', array('jquery'), '1.0', false );
 
+    wp_enqueue_script( 'fluidvids', THEME_URL . '/libraries/fluidvids/fluidvids.min.js', array(), '2.4.2');
+
     wp_enqueue_script( 'xypost.main', THEME_URL . '/js/main.js', array('jquery'), '1.0', false );
 
     wp_enqueue_script( 'bootstrap-js', THEME_URL . '/libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
        
 
     wp_enqueue_script( 'jquery.cycle', THEME_URL . '/libraries/cycle/jquery.cycle2.min.js', array('jquery'), '1.3.3', true );
+
+    wp_enqueue_script( 'jquery.dfp', THEME_URL . '/libraries/jquery.dfp/jquery.dfp.min.js', array(), '2.4.2');
+
+    
     
     wp_localize_script( 'xypost.main', 'xyGlobal', array(
             'ajaxurl' => admin_url( 'admin-ajax.php' )
@@ -126,15 +132,6 @@ function xy_register_sidebars() {
     register_sidebar( array(
         'name'          => 'Home Banner 1',
         'id'            => 'xy_home_banner_1',
-        'before_widget' => '<div>',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="cat_name">',
-        'after_title'   => '</h3>',
-    ) );
-
-    register_sidebar( array(
-        'name'          => 'Home Banner 1.5',
-        'id'            => 'xy_home_banner_1_5',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="cat_name">',
@@ -456,6 +453,74 @@ if( function_exists('acf_add_options_page') ) {
     acf_add_options_sub_page('General');
     
 }
+
+add_filter( 'the_content', 'xy_post_insert_post_ads' );
+
+function xy_post_insert_post_ads( $content ) {
+    
+    $ad_code = '<div class="adunit inner-single" id="blk_notas_300x250_btf1_mobi" data-dimensions="300x250"  data-size-mapping="mobile"></div>';
+
+    if ( is_single() && ! is_admin() ) {
+        return xy_post_insert_after_paragraph( $ad_code, 2, $content );
+    }
+    
+    return $content;
+}
+ 
+// Parent Function that makes the magic happen
+ 
+function xy_post_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
+    $closing_p = '</p>';
+    $paragraphs = explode( $closing_p, $content );
+    foreach ($paragraphs as $index => $paragraph) {
+
+        if ( trim( $paragraph ) ) {
+            $paragraphs[$index] .= $closing_p;
+        }
+
+        if ( $paragraph_id == $index + 1 ) {
+            $paragraphs[$index] .= $insertion;
+        }
+    }
+    
+    return implode( '', $paragraphs );
+}
+
+function rel_shortcode( $atts, $content = null ) {
+    return '<div class="rel-txt">' . $content . '</div>';
+}
+add_shortcode( 'rel', 'rel_shortcode' );
+
+function excerpt_shortcode( $atts, $content = null ) {
+    return '<div class="excerpt">' . $content . '</div>';
+}
+add_shortcode( 'excerpt', 'excerpt_shortcode' );
+
+function dfpScript() {
+?>
+<script type="text/javascript">
+    jQuery('.adunit').dfp({
+        dfpID: '158800740',
+        sizeMapping: {
+            'desktop': [
+                {browser: [1024, 0], ad_sizes: [[970, 250], [728, 90]]},
+                {browser: [   0,   0], ad_sizes: []}
+            ],
+            'sidebar': [
+                {browser: [1024, 0], ad_sizes: [[300, 600], [300, 250]]},
+                {browser: [   0,   0], ad_sizes: []}
+            ],
+            'mobile': [
+                {browser: [1024, 0], ad_sizes: []},
+                {browser: [   0,   0], ad_sizes: [[300, 250], [300, 50]]}
+            ]
+        }
+    });
+
+</script>
+<?php
+}
+add_action( 'wp_footer', 'dfpScript' );
 
 // Advanced Custom Fields Config
 // include_once "acf-config.php";
