@@ -51,13 +51,7 @@
                                 endif;
                                 ?>
                             </div> 
-                            <ul class="redes-sociales list-inline Bebas-Neue-Light">
-                                <li><a href=""><i class="fa fa-search rounded-circle" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook rounded-circle" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter rounded-circle" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-youtube-play rounded-circle" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                            </ul>   
+                            <?php echo do_shortcode('[ssbp title="'.get_the_title().'" url="'.get_permalink().'"]'); ?>
                         </div>
                         <a href="#" class="cycle-pager cycle-prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                         <a href="#" class="cycle-pager cycle-next"><i class="glyphicon glyphicon-chevron-right"></i></a>

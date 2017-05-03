@@ -11,6 +11,10 @@
             <?php bloginfo('name'); ?>
         </title>
         <?php wp_head(); ?>
+
+        <?php if ( displayInBoardTag() ) : ?>
+            <script src="//a.teads.tv/page/66972/tag" async="true"></script>
+        <?php endif; ?>
     </head>
     <body>
          <section class="wrapper">
@@ -19,6 +23,9 @@
                     <div class="container-fluid">
                         <div class="container">
                             <div class="row">
+                                <?php if ( wp_is_mobile() ) : ?>
+                                <div class="adunit" id="blk_home_out-of-page_mobi" data-outofpage="true"></div>
+                                <?php endif; ?>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <nav class="menu">
                                         <div class="btn-group Bebas-Neue-Bold mobile-menu">
@@ -85,7 +92,6 @@
                                             <?php if ( $youtube ) : ?>
                                             <li><a href="<?= $youtube; ?>" target="_blank"><i class="fa fa-youtube-play rounded-circle" aria-hidden="true"></i></a></li>
                                             <?php endif; ?>
-                                            <li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                                         </ul>
                                     </nav> 
                                 </div>  

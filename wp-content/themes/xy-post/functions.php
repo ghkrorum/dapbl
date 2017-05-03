@@ -11,8 +11,8 @@ function xy_post_scripts() {
     // wp_enqueue_style( 'owl.theme', THEME_URL . '/libraries/owl-carousel/owl.theme.css' );
     wp_enqueue_style( 'font-awesome', THEME_URL . '/css/font-awesome.min.css' );
     wp_enqueue_style( 'bootstrap', THEME_URL . '/libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css' );
-	wp_enqueue_style( 'xypost.reset', THEME_URL . '/css/reset.css' );
-    wp_enqueue_style( 'xypost.style', THEME_URL . '/css/style.css' );
+	wp_enqueue_style( 'xypost.reset', THEME_URL . '/css/reset.css', array(), '1.0.1' );
+    wp_enqueue_style( 'xypost.style', THEME_URL . '/css/style.css', array(), '1.0.2' );
 		
 		/* End CSS */
 
@@ -46,17 +46,17 @@ add_action( 'wp_enqueue_scripts', 'xy_post_scripts' );
 
 function xy_post_theme_setup() {
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'home_featured', 1080, 274, true );
-    add_image_size( 'category_featured', 974, 381, true );
-    add_image_size( 'post_featured', 724, 400, true );
-    add_image_size( 'video_medum', 489, 361, true );
-    add_image_size( 'xplainer_post_thumb', 310, 240, true );
-    add_image_size( 'related_thumb', 300, 262, true );
-    add_image_size( 'vertical_207x413', 207, 413, true );
-    add_image_size( 'horizontal_253x98', 253, 98, true );
-    add_image_size( 'author_thumb', 296, 150, true );
-    add_image_size( 'xplainer_thumb', 290, 180, true );
-    add_image_size( 'vertical_221x436', 221, 436, true );
+    add_image_size( 'home_featured', 1080, 274, array( 'center', 'center' ) );
+    add_image_size( 'category_featured', 974, 381, array( 'center', 'center' ) );
+    add_image_size( 'post_featured', 724, 400, array( 'center', 'center' ) );
+    add_image_size( 'video_medum', 489, 361, array( 'center', 'center' ) );
+    add_image_size( 'xplainer_post_thumb', 310, 240, array( 'center', 'center' ) );
+    add_image_size( 'related_thumb', 300, 262, array( 'center', 'center' ) );
+    add_image_size( 'vertical_207x413', 207, 413, array( 'center', 'center' ) );
+    add_image_size( 'horizontal_253x98', 253, 98, array( 'center', 'center' ) );
+    add_image_size( 'author_thumb', 296, 150, array( 'center', 'center' ) );
+    add_image_size( 'xplainer_thumb', 290, 180, array( 'center', 'center' ) );
+    add_image_size( 'vertical_221x436', 221, 436, array( 'center', 'center' ) );
 
 }
 add_action( 'after_setup_theme', 'xy_post_theme_setup' );
@@ -495,6 +495,22 @@ function excerpt_shortcode( $atts, $content = null ) {
     return '<div class="excerpt">' . $content . '</div>';
 }
 add_shortcode( 'excerpt', 'excerpt_shortcode' );
+
+function displayInReadTag(){
+
+    if ( is_single() || ( is_page() && ( !is_page_template('template-glossary.php') && !is_page_template('template-section.php') && !is_page_template('template-home.php') ) ) ){
+        return true;
+    }
+    return false;
+}
+
+function displayInBoardTag(){
+
+    if ( is_category() || is_front_page() || ( is_page() && is_page_template('template-section.php') ) ){
+        return true;
+    }
+    return false;
+}
 
 function dfpScript() {
 ?>

@@ -174,7 +174,7 @@ $excludePostIdArray = array();
                                     <hr>
                                 </div>    
                             </div>
-                            <div class="row section-destacados HelveticaNeue-CondensedBold">
+                            <div class="row section-destacados section-mas-destacados HelveticaNeue-CondensedBold">
 
                                 <?php 
                                 $blockClass = 'first';
@@ -323,9 +323,9 @@ $excludePostIdArray = array();
                                                 <?php if ( has_post_thumbnail() ) : ?>
                                                 <img src="<?php the_post_thumbnail_url('vertical_221x436'); ?>" class="img-responsive">
                                                 <?php endif; ?>
-                                                <div class="img-degradado">
-                                                    <h3 class="title HelveticaNeue-Bold"><?php the_title(); ?></h3>
-                                                </div>
+                                            </div>
+                                            <div class="img-degradado">
+                                                <h3 class="title HelveticaNeue-Bold"><?php the_title(); ?></h3>
                                             </div>
                                         </article>
                                     </a>

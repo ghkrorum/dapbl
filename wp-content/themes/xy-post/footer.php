@@ -44,7 +44,6 @@
                                         <?php if ( $youtube ) : ?>
                                         <li><a href="<?= $youtube; ?>" target="_blank"><i class="fa fa-youtube-play rounded-circle" aria-hidden="true"></i></a></li>
                                         <?php endif; ?>
-                                        <li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
                             </div>    
@@ -108,7 +107,11 @@
                 </div>    
             </div>    
         </div>
-        <!--End-->                      
+        <!--End-->
         <?php wp_footer();?>
+
+        <?php if ( displayInReadTag() ) : ?>
+            <script src="//a.teads.tv/page/66970/tag" async="true"></script>
+        <?php endif; ?>
     </body>
 </html>
