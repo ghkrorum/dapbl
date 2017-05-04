@@ -9,7 +9,7 @@ add_filter( 'spectrom_sync_allowed_post_types',  'kxn_sync_post_type' );
 
 function kxn_sync_api_push_content($data, $apiRequest){
 
-	if ( empty($post_data['post_data']['post_content']) ){
+	if ( empty( $data['post_data']['post_content'] ) ){
 		$post_id = $data['post_id'];
 
 		$post_thumbnail_id = abs(get_post_thumbnail_id($post_id));
@@ -230,7 +230,7 @@ EOT;
 		}
 
 		if ( $categoryList ){
-			$categoryList = '<ul id="synccategorychecklist" class="synccategorychecklist form-no-clear">'.$categoryList.'</ul>';
+			$categoryList = '<ul id="synccategorychecklist" class="categorychecklist synccategorychecklist form-no-clear">'.$categoryList.'</ul>';
 		}
 
 		$categoryBox = sprintf( $categoryBox, $categoryList);

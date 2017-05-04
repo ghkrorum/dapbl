@@ -865,8 +865,8 @@ SyncDebug::log(__METHOD__."() set_post_thumbnail({$target_post_id}, {$attach_id}
 		if (!$has_error) {
 SyncDebug::log(__METHOD__.'() image successfully handled');
 			// Set this post as featured image, if specified.
-			if ($this->post('featured', 0))
-				set_post_thumbnail($target_post_id /*$this->post('post_id')*/, $this->media_id);
+			// if ($this->post('featured', 0))
+			// 	set_post_thumbnail($target_post_id /*$this->post('post_id')*/, $this->media_id);
 
 			$media_data = array(
 				'id' => $this->media_id,
